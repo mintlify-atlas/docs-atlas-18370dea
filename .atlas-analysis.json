@@ -1,0 +1,124 @@
+{
+  "projectType": "api-service",
+  "projectName": "Entity Core",
+  "projectDescription": "A FastAPI-based REST API service for managing neuroscience research entities, brain atlases, morphologies, and scientific artifacts.",
+  "theme": "aspen",
+  "primaryColor": "#d3fa63",
+  "lightColor": "#8c9454",
+  "darkColor": "#2e1e3c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "authentication"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/entities",
+              "concepts/authorization",
+              "concepts/brain-regions",
+              "concepts/brain-atlases"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/working-with-assets",
+              "guides/filtering-and-search",
+              "guides/deployment",
+              "guides/database-migrations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/pagination",
+              "api/error-handling"
+            ]
+          },
+          {
+            "group": "Entity Endpoints",
+            "pages": [
+              "api/entities/cell-morphology",
+              "api/entities/emodel",
+              "api/entities/memodel",
+              "api/entities/experimental-data"
+            ]
+          },
+          {
+            "group": "Brain Data",
+            "pages": [
+              "api/brain/regions",
+              "api/brain/hierarchies",
+              "api/brain/atlases"
+            ]
+          },
+          {
+            "group": "Assets",
+            "pages": [
+              "api/assets/overview",
+              "api/assets/upload",
+              "api/assets/download",
+              "api/assets/directories"
+            ]
+          },
+          {
+            "group": "Research Data",
+            "pages": [
+              "api/research/simulations",
+              "api/research/recordings",
+              "api/research/publications"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "api/admin/overview",
+              "api/admin/global-resources"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "RESTful API for neuroscience research entities",
+    "Brain region hierarchies and atlases",
+    "Asset management with S3 integration",
+    "Project-based authorization with Keycloak",
+    "Advanced filtering and faceted search",
+    "OpenAPI/Swagger documentation",
+    "PostgreSQL with pgvector for spatial data",
+    "Alembic database migrations"
+  ],
+  "publicApiSurface": [
+    "GET /cell-morphology",
+    "GET /emodel",
+    "GET /brain-region",
+    "GET /brain-atlas",
+    "POST /cell-morphology",
+    "GET /{entity_type}/{entity_id}/assets",
+    "POST /{entity_type}/{entity_id}/assets",
+    "GET /experimental-bouton-density",
+    "GET /experimental-neuron-density",
+    "GET /simulation",
+    "GET /single-neuron-simulation",
+    "GET /electrical-cell-recording",
+    "GET /ion-channel-recording",
+    "POST /admin/global-resources"
+  ]
+}
